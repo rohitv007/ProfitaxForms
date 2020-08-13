@@ -18,4 +18,16 @@ $(document).ready(function () {
         $('.collapse.in').toggleClass('in');
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
     });
+
+
+    // if ($(window).width() > 993) {
+    //     $('#sidebarCollapse').prop("disabled", true);
+    // }
+    // else{
+    //     $('#sidebarCollapse').prop("disabled", false);
+    // }
+    if  ($(window).width() > 993){
+    $('#sidebarCollapse').addClass('disabled');}
+else
+    $('#sidebarCollapse').removeClass('disabled');
 });

@@ -1,4 +1,7 @@
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+:root{
+    font-size: 16px;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
@@ -21,12 +24,32 @@ a:focus {
 }
 
 .navbar {
-    padding: 15px 10px;
-    background: #fff;
+    padding: 1rem 0px;
     border: none;
     border-radius: 0;
+    margin-top: -10px;
+    margin-left:-15px;
     margin-bottom: 40px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    background-color: transparent !important;
+    box-shadow: none;
+}
+
+@media (max-width:992px){
+    .navbar{
+        padding: 0px 0px;
+        margin-top: -10px;
+    }
+}
+@media (max-width:800px){
+    .navbar{
+        margin-left:-20px;
+        margin-top: -20px;
+    }
+}
+
+.nav-link{
+    margin-right: 2rem;
 }
 
 .navbar-btn {
@@ -34,13 +57,6 @@ a:focus {
     outline: none !important;
     border: none;
 }
-
-/* .line {
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px dashed #ddd;
-    margin: 40px 0;
-} */
 
 /* ---------------------------------------------------
     SIDEBAR STYLE
@@ -63,6 +79,21 @@ a:focus {
 #sidebar.active {
     left: 0;
 }
+/* #toggle-icon[disabled] { pointer-events: none; } */
+
+.disabled{
+    display:none;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+
+/* 
+@media (max-width:992px){
+    #toggle-icon{
+        display: block;
+    }  
+} */
 
 #dismiss {
     width: 35px;
@@ -101,8 +132,13 @@ a:focus {
 }
 
 #sidebarCollapse{
-    height:45px;
-    width:50px;
+    height:10vh;
+    width:10vw;
+    max-width:80px;
+    min-width:60px;
+    
+    background:transparent;
+    border:none !important;
 }
 
 #sidebar .sidebar-header {
@@ -134,6 +170,41 @@ a:focus {
 .navbar h1{
     margin-right: 30%;
 }
+
+/* ---------------------------------------------------
+    JUMBOTRON
+----------------------------------------------------- */
+
+.jumbotron{
+  
+    padding:0;
+    margin-top: -8vh;
+  
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (max-width:900px){
+    .jumbotron{
+        margin-top:-55px;
+    }
+}
+  @media (max-width:500px){
+    .navbar{
+        margin-left:-20px;
+    }
+    .jumbotron{
+        margin-top:-65px;
+    }
+}
+
+
+
+
+
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
@@ -141,9 +212,9 @@ a:focus {
 #content {
     width: 100%;
     padding: 20px;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     transition: all 0.3s;
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     right: 0;
 }
