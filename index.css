@@ -6,6 +6,17 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
 }
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  body::-webkit-scrollbar-track {
+    background: rgb(177, 175, 173);        /* color of the tracking area */
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(22, 22, 14);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 2px solid rgb(124, 124, 123);  /* creates padding around scroll thumb */
+  }
 
 p {
     font-family: 'Poppins', sans-serif;
@@ -33,19 +44,7 @@ a:focus {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
     background-color: transparent !important;
     box-shadow: none;
-}
-
-@media (max-width:992px){
-    .navbar{
-        padding: 0px 0px;
-        margin-top: -10px;
-    }
-}
-@media (max-width:800px){
-    .navbar{
-        margin-left:-20px;
-        margin-top: -20px;
-    }
+    max-height:80px;
 }
 
 .nav-link{
@@ -58,6 +57,28 @@ a:focus {
     border: none;
 }
 
+.disabled{
+    display:none;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+
+header{
+    max-height:80px;
+}
+
+@media (max-width:992px){
+    header{
+        max-height: 65px;
+    }
+    .navbar{
+        padding:0;
+        margin-top:-20px;
+    }
+}
+
+
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -69,31 +90,16 @@ a:focus {
     left: -250px;
     height: 100vh;
     z-index: 999;
-    background: #7386D5;
+    background: #000;
     color: #fff;
     transition: all 0.3s;
-    /* overflow-y: scroll; */
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 #sidebar.active {
     left: 0;
 }
-/* #toggle-icon[disabled] { pointer-events: none; } */
 
-.disabled{
-    display:none;
-    cursor: not-allowed;
-    pointer-events: none;
-}
-
-
-/* 
-@media (max-width:992px){
-    #toggle-icon{
-        display: block;
-    }  
-} */
 
 #dismiss {
     width: 35px;
@@ -101,7 +107,7 @@ a:focus {
     border-radius: 5px;
     line-height: 35px;
     text-align: center;
-    background: #7386D5;
+    background: rgb(46, 46, 46);
     position: absolute;
     top: 10px;
     right: 10px;
@@ -112,24 +118,10 @@ a:focus {
 }
 
 #dismiss:hover {
-    background: rgb(186, 202, 219);
-    color: #7386D5;
+    background: rgb(46, 46, 46);
+    color: rgb(155, 151, 151);
 }
 
-.overlay {
-    display: none;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 998;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-}
-.overlay.active {
-    display: block;
-    opacity: 1;
-}
 
 #sidebarCollapse{
     height:10vh;
@@ -142,13 +134,13 @@ a:focus {
 }
 
 #sidebar .sidebar-header {
-    padding: 20px;
-    background: #6d7fcc;
+    padding: 15px 10px 10px;
+    background: rgb(46, 46, 46);
 }
 
 #sidebar ul.components {
-    padding: 20px 0;
-    border-bottom: 1px solid #47748b;
+    padding: 20px 10px;
+    border-bottom: 1px solid #fff;
 }
 
 #sidebar ul p {
@@ -157,19 +149,16 @@ a:focus {
 }
 
 #sidebar ul li a {
-    padding: 10px;
+    padding: 15px;
     font-size: 1.1em;
     display: block;
 }
 
 #sidebar ul li a:hover {
-    color: #7386D5;
+    color: #000;
     background: #fff;
 }
 
-.navbar h1{
-    margin-right: 30%;
-}
 
 /* ---------------------------------------------------
     JUMBOTRON
@@ -178,7 +167,6 @@ a:focus {
 .jumbotron{
   
     padding:0;
-    margin-top: -8vh;
   
 }
 
@@ -186,21 +174,6 @@ a:focus {
     max-width: 100%;
     height: auto;
   }
-
-  @media (max-width:900px){
-    .jumbotron{
-        margin-top:-55px;
-    }
-}
-  @media (max-width:500px){
-    .navbar{
-        margin-left:-20px;
-    }
-    .jumbotron{
-        margin-top:-65px;
-    }
-}
-
 
 
 
@@ -212,9 +185,85 @@ a:focus {
 #content {
     width: 100%;
     padding: 20px;
-    /* min-height: 100vh; */
     transition: all 0.3s;
-    /* position: absolute; */
     top: 0;
     right: 0;
 }
+
+.heading{
+    margin-top:20vh;
+    margin-bottom:10vh;
+    text-align: center;
+}
+.service-imgs{
+    margin:auto;
+    padding:5vh;
+    height:90vh;
+    overflow:scroll;
+    overflow-x:hidden;
+    border: solid white 2px;
+    border-radius:15px;
+    box-shadow:1px 1px 5px rgb(87, 86, 86) inset;
+}
+.service-imgs::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+  }
+  .service-imgs::-webkit-scrollbar-track {
+    background: rgb(177, 175, 173);        /* color of the tracking area */
+  }
+  .service-imgs::-webkit-scrollbar-thumb {
+    background-color: rgb(2, 2, 2);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(124, 124, 123);  /* creates padding around scroll thumb */
+  }
+
+@media (max-width:600px){
+    .service-imgs{
+        margin-left:5vw;
+        }
+}
+@media (min-width:1600px){
+    .service-imgs{
+        width:20vw;
+        margin-right: 20vw;
+    }
+}
+
+img{
+    height:auto;
+    /* width:40%; */
+    /* vertical-align: bottom; */
+  /* background-position: bottom; */
+    /* background-repeat:  no-repeat;s */
+    width: 100%;
+    display: inline-block;
+    background-size: cover;
+}
+img {
+    max-width: 100%;
+    display: inline-block;
+  }
+  /* For medium devices (e.g. tablets) */
+  @media (min-width: 420px) {
+    img {
+      max-width: 70%;
+    }
+    .service-imgs{
+        width:80vw;
+    }
+  }
+  /* For large devices (e.g. desktops) */
+  @media (min-width: 760px) {
+    img {
+      max-width: 80%;
+    }
+  }
+
+  .img:hover{
+      transform:scale(1.05);
+  }
+  
+  /* .img p{
+      position: absolute;
+      bottom:0;
+  } */

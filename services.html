@@ -27,68 +27,75 @@
 </style>
 
 <body>
-    <div class="container-fluid">
-        <div class="wrapper text-center row ">
-            <!-- Sidebar -->
-            <nav id="sidebar">
+    <header>
+        <nav id="sidebar">
 
-                <div id="dismiss">
-                    <svg class="svg-inline--fa fa-arrow-left fa-w-14" aria-hidden="true" data-prefix="fas"
-                        data-icon="arrow-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"
-                        data-fa-i2svg="">
-                        <path fill="currentColor"
-                            d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z">
-                        </path>
-                    </svg>
-                </div>
-
-                <div class="sidebar-header">
-                    <h3>PROFITAX</h3>
-                </div>
-
-                <ul class="list-unstyled components">
-
-                    <li>
-                        <a href="index.html">Home</a>
-
-                    </li>
-                    <li class="active">
-                        <a href="#" data-toggle="collapse" aria-expanded="false">Services</a>
-
-                    </li>
-                    <li>
-                        <a href="#">Team</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <!-- Page Content -->
-            <div id="content" style="background-color: black;">
-
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container-fluid">
-
-                        <button type="button" id="sidebarCollapse" class="btn btn-info">
-                            <i class="fas fa-align-left"></i>
-                            <span><img class="img-fluid" src="images/toggle-icon.png"></span>
-                        </button>
-                        <h1 class="mx-auto">PROFITAX</h1>
-                    </div>
-                </nav>
+            <div id="dismiss">
+                <svg class="svg-inline--fa fa-arrow-left fa-w-14" aria-hidden="true" data-prefix="fas"
+                    data-icon="arrow-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"
+                    data-fa-i2svg="">
+                    <path fill="currentColor"
+                        d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z">
+                    </path>
+                </svg>
             </div>
-            <!-- Dark Overlay element -->
-            <!-- <div class="overlay"></div> -->
 
+            <div class="sidebar-header">
+                <h3>PROFITAX</h3>
+            </div>
 
+            <ul class="list-unstyled components">
 
+                <li>
+                    <a href="index.html">Home</a>
+
+                </li>
+                <li class="active">
+                    <a href="services.html">Services</a>
+
+                </li>
+                <li>
+                    <a href="#">Team</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info disabled">
+                        <i class="fas fa-align-left"></i>
+                        <span><img class="img-fluid" src="images/toggle-icon.png"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav mx-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="services.html">SERVICES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">TEAM</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-    </div>
-    <!-- <br><br><br><br><br><br><br> -->
+    </header>
+    
 
-    <div class="container">
+    <div class="container mt-5">
 
         <div class="card hover " style="border-radius: 20px;background-color: #f68e08;">
             <div class="row">
@@ -406,8 +413,6 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
 
-    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="/path/to/jquery.mCustomScrollbar.concat.min.js"></script> -->
     <script src="jquery-3.5.1.js"></script>
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>

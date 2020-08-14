@@ -1,32 +1,32 @@
 $(document).ready(function () {
-    // $("#sidebar").mCustomScrollbar({
-    //     theme: "minimal"
-    // });
-
-    $('#dismiss, .overlay').on('click', function () {
+   
+    $('#dismiss').on('click', function () {
         // hide sidebar
         $('#sidebar').removeClass('active');
-        // hide overlay
-        $('.overlay').removeClass('active');
+        
     });
 
     $('#sidebarCollapse').on('click', function () {
         // open sidebar
         $('#sidebar').addClass('active');
-        // fade in the overlay
-        $('.overlay').addClass('active');
-        $('.collapse.in').toggleClass('in');
-        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        
+        // $('.collapse.in').toggleClass('in');
+        // $('a[aria-expanded=true]').attr('aria-expanded', 'false');
     });
 
+    
+        var path = window.location.href; // because the 'href' property of the DOM element is the absolute path
+        $('ul a').each(function() {
+         if (this.href === path) {
+          $(this).addClass('active');
+         }
+         else{
+            $(this).removeClass('active');
+         }
+        });
+       
 
-    // if ($(window).width() > 993) {
-    //     $('#sidebarCollapse').prop("disabled", true);
-    // }
-    // else{
-    //     $('#sidebarCollapse').prop("disabled", false);
-    // }
-    if  ($(window).width() > 993){
+    if  ($(window).width() > 992){
     $('#sidebarCollapse').addClass('disabled');}
 else
     $('#sidebarCollapse').removeClass('disabled');
