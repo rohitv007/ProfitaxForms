@@ -83,10 +83,11 @@
 
                         <div class="form-inline mb-4" style=" display:inline-block;">
                             Email ID
-                            <input type="email" class="form-control" name="e-mail" placeholder="name@example.com" style="min-width:200px;width:30vw; margin-right:20px;">
-                          </div>
+                            <input type="email" class="form-control" name="e-mail" placeholder="name@example.com"
+                                style="min-width:200px;width:30vw; margin-right:20px;">
+                        </div>
 
-                          <div class="form-inline mb-4" style=" display:inline-block;">
+                        <div class="form-inline mb-4" style=" display:inline-block;">
                             Mobile Number
                             <input class="form-control" type="number" name="mob-num"
                                 style="width:200px; margin-right:20px;" required>
@@ -113,33 +114,37 @@
 
         <div class="current-address mt-4">
             <form>
-            <h5 style="display: inline-block; margin-right:20px;"><b>Current Address</b></h5>
-            <div style="display: inline-block;" class="mb-4">
-            <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                <label class="custom-control-label" for="customRadioInline1">Communication</label>
-              </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" checked>
-                <label class="custom-control-label" for="customRadioInline2">Residence</label>
-              </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
-                <label class="custom-control-label" for="customRadioInline3">Office</label>
-              </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input">
-                <label class="custom-control-label" for="customRadioInline4">Specify</label>
-              </div>
-              </div>
-              <br>
-            
+                <h5 style="display: inline-block; margin-right:20px;"><b>Current Address</b></h5>
+                <div style="display: inline-block;" class="mb-4">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                            class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline1">Communication</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                            class="custom-control-input" checked>
+                        <label class="custom-control-label" for="customRadioInline2">Residence</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline3" name="customRadioInline1"
+                            class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline3">Office</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline4" name="customRadioInline1"
+                            class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline4">Specify</label>
+                    </div>
+                </div>
+                <br>
+
                 <div class="row ml-4">
                     <div class="form-group row" style="margin:auto;">
                         <div class="form-inline mb-4 col-lg-6 col-12" style=" display:inline-block;">
                             Flat/Door/Building<span style="color:red;">*</span>
-                            <input class="form-control" type="text" name="flat"
-                                style="width:70%; margin-right:20px;" required>
+                            <input class="form-control" type="text" name="flat" style="width:70%; margin-right:20px;"
+                                required>
                         </div>
 
                         <div class="form-inline mb-4 col-lg-6 col-12" style=" display:inline-block;">
@@ -148,61 +153,259 @@
                         </div>
 
                         <div class="form-inline mb-4 col-lg-6 col-12" style=" display:inline-block;">
-                            Area/Locality<span style="color:red;">*</span>
-                             <input class="form-control" type="text" name="flat"
+                            Area/Locality <span style="color:red;">*</span>
+                            <input class="form-control" type="text" name="flat" style="width:80%; margin-right:20px;"
+                                required>
+                        </div>
+
+                        <div class="form-inline mb-4 col-lg-6 col-12" style=" display:inline-block;">
+                            Town/City/District <span style="color:red;">*</span> <input class="form-control" type="text"
+                                name="road" style="width:75%; margin-right:20px;">
+                        </div>
+
+                        <div class="form-inline mb-4 col-lg-6 col-12" style=" display:inline-block;">
+                            Pincode
+                            <input class="form-control" type="number" name="mob-num"
                                 style="width:80%; margin-right:20px;" required>
                         </div>
 
                         <div class="form-inline mb-4 col-lg-6 col-12" style=" display:inline-block;">
-                            Town/City/District<span style="color:red;">*</span> <input class="form-control" type="text" name="road"
-                                style="width:75%; margin-right:20px;">
-                        </div>
-
-                        <div class="form-inline mb-4" style=" display:inline-block;">
-                            Surname<span style="color:red;">*</span> 
-                            <input class="form-control" type="text" name="surname"
-                                style="width:200px; margin-right:20px;" required>
-                        </div>
-
-                        <div class="form-inline mb-4" style=" display:inline-block;">
-                            Date Of Birth <span style="color:red;">*</span>
-                            <input type="date" class="form-control" name="date" style="width:200px; margin-right:20px;"
-                                required>
-                        </div>
-
-                        <div class="form-inline mb-4" style=" display:inline-block;">
-                            Gender <select class="form-control" name="gender" style="width:200px; margin-right:20px;">
-                                <option value="male">MALE</option>
-                                <option value="female">FEMALE</option>
-                                <option value="other">OTHER</option>
+                            State <span style="color:red;">*</span>
+                            <select name="state" id="state" class="form-control" style="width:80%; margin-right:20px;">
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chandigarh">Chandigarh</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                <option value="Daman and Diu">Daman and Diu</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Lakshadweep">Lakshadweep</option>
+                                <option value="Puducherry">Puducherry</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Odisha">Odisha</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan" selected>Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                <option value="West Bengal">West Bengal</option>
                             </select>
                         </div>
 
 
-                        <div class="form-inline" style=" display:inline-block;">
-                            Email ID
-                            <input type="email" class="form-control" name="e-mail" placeholder="name@example.com" style="min-width:200px;width:30vw; margin-right:20px;">
-                          </div>
 
-                          <div class="form-inline mb-4" style=" display:inline-block;">
+                    </div>
+
+                </div>
+            </form>
+
+
+            <div class="row mt-5">
+                <form action="reg.php" class="form">
+                    
+                        <div class="form-inline mb-4 mr-5 ml-5" style=" display:inline-block;">
+                            Primary<span style="color:red;">*</span>
+
+                        </div>
+
+                        <div class="form-inline mb-4" style=" display:inline-block;">
+
+                            <select name="Belong" id="bt" style="width:80px; margin-right:20px;" class="form-control">
+                                <option value="Self">Self</option>
+                                <option value="parent">Parent</option>
+                                <option value="brother">Brother</option>
+                                <option value="sister">Sister</option>
+                                <option value="Spouse">Spouse</option>
+                                <option value="relative">Relative</option>
+                                <option value="friend">Friend</option>
+
+
+
+                            </select>
+
+                        </div>
+                        <div class="form-inline mb-4" style=" display:inline-block;">
                             Mobile Number
                             <input class="form-control" type="number" name="mob-num"
                                 style="width:200px; margin-right:20px;" required>
                         </div>
 
+
                         <div class="form-inline mb-4" style=" display:inline-block;">
-                            Landline Number
-                            <input class="form-control" type="number" name="mob-num"
-                                style="width:200px; margin-right:20px;" required>
+                            Belong to
+                            <select name="Belong" id="bt" style="width:200px; margin-right:20px;" class="form-control">
+                                <option value="Self">Self</option>
+                                <option value="parent">Parent</option>
+                                <option value="brother">Brother</option>
+                                <option value="sister">Sister</option>
+                                <option value="Spouse">Spouse</option>
+                                <option value="relative">Relative</option>
+                                <option value="friend">Friend</option>
+
+
+
+                            </select>
                         </div>
+
+                        
+                        <div class="form-inline mb-4" style=" display:inline-block;">
+                            __
+                            <select name="Belong" id="bt" style="width:200px; margin-right:20px;" class="form-control">
+                                <option value="Self">Self</option>
+                                <option value="parent">Parent</option>
+                                <option value="brother">Brother</option>
+                                <option value="sister">Sister</option>
+                                <option value="Spouse">Spouse</option>
+                                <option value="relative">Relative</option>
+                                <option value="friend">Friend</option>
+
+
+
+                            </select>
+                        </div>
+                        <div class="form-inline mb-4" style=" display:inline-block;">
+
+                            Email
+
+                            <input type="email" id="em" class="form-control" style="width:200px; margin-right:20px;">
+
+                        </div>
+
+                        <div class="form-inline mb-4" style=" display:inline-block;">
+
+                            Belong to
+                            <select name="Belong" id="bt" style="width: 100px;" class="form-control">
+                                <option value="Self">Self</option>
+                                <option value="parent">Parent</option>
+                                <option value="brother">Brother</option>
+                                <option value="sister">Sister</option>
+                                <option value="Spouse">Spouse</option>
+                                <option value="relative">Relative</option>
+                                <option value="friend">Friend</option>
+
+
+
+                            </select>
+
+                        </div>
+
+                </form>
+            </div>
+
+        </div>
+
+
+        <div class="row mt-2">
+            <form action="" class="form">
+                <div>
+                    <div class="form-inline mb-4 mr-5 ml-5" style=" display:inline-block;">
+                        Secondary<span style="color:red;">*</span>
 
                     </div>
 
-                </div>
+                    <div class="form-inline mb-4" style=" display:inline-block;">
 
+                        <select name="Belong" id="bt" style="width:80px; margin-right:20px;" class="form-control">
+                            <option value="Self">Self</option>
+                            <option value="parent">Parent</option>
+                            <option value="brother">Brother</option>
+                            <option value="sister">Sister</option>
+                            <option value="Spouse">Spouse</option>
+                            <option value="relative">Relative</option>
+                            <option value="friend">Friend</option>
+
+
+
+                        </select>
+                    </div>
+                    <div class="form-inline mb-4" style=" display:inline-block;">
+                        Mobile Number
+                        <input class="form-control" type="number" name="mob-num" style="width:200px; margin-right:20px;"
+                            required>
+                    </div>
+                    <div class="form-inline mb-4" style=" display:inline-block;">
+                        Belong to
+                        <select name="Belong" id="bt" style="width:200px; margin-right:20px;" class="form-control">
+                            <option value="Self">Self</option>
+                            <option value="parent">Parent</option>
+                            <option value="brother">Brother</option>
+                            <option value="sister">Sister</option>
+                            <option value="Spouse">Spouse</option>
+                            <option value="relative">Relative</option>
+                            <option value="friend">Friend</option>
+
+
+
+                        </select>
+                    </div>
+
+
+                    <div class="form-inline mb-4" style=" display:inline-block;">
+                        __
+                        <select name="Belong" id="bt" style="width:200px; margin-right:20px;" class="form-control">
+                            <option value="Self">Self</option>
+                            <option value="parent">Parent</option>
+                            <option value="brother">Brother</option>
+                            <option value="sister">Sister</option>
+                            <option value="Spouse">Spouse</option>
+                            <option value="relative">Relative</option>
+                            <option value="friend">Friend</option>
+
+
+
+                        </select>
+                    </div>
+                    <div class="form-inline mb-4" style=" display:inline-block;">
+
+                        Email
+
+                        <input type="email" id="em" class="form-control" style="width:200px; margin-right:20px;">
+
+                    </div>
+
+                    <div class="form-inline mb-4" style=" display:inline-block;">
+
+                        Belong to
+                        <select name="Belong" id="bt" style="width: 100px;" class="form-control">
+                            <option value="Self">Self</option>
+                            <option value="parent">Parent</option>
+                            <option value="brother">Brother</option>
+                            <option value="sister">Sister</option>
+                            <option value="Spouse">Spouse</option>
+                            <option value="relative">Relative</option>
+                            <option value="friend">Friend</option>
+
+
+
+                        </select>
+
+                    </div>
 
             </form>
         </div>
+
+    </div>
+
+    </div>
 
 
 
